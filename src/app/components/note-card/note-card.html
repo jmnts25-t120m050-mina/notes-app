@@ -1,0 +1,14 @@
+<div class="col">
+  <div class="card">
+    <div class="card-header">
+      {{ note.created! | relativeTimePipe }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ note.title }}</h5>
+      <div class="card-text">{{ note.body }}</div>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-danger" (click)="delete()">Ištrinti</button>
+    </div>
+  </div>
+</div>

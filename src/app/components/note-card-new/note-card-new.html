@@ -1,0 +1,21 @@
+<div class="col">
+  <div class="card text-white bg-primary mb-3">
+    <div class="card-header">
+      Naujas užrašas
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">
+        <input type="text" class="form-control" [(ngModel)]="title" required>
+      </h5>
+      <p class="card-text">
+        <textarea class="form-control" [(ngModel)]="body" required></textarea>
+      </p>
+    </div>
+    <div class="card-footer">
+      @if (!(title === null || body === null)) {
+        <button class="btn btn-success" (click)="add()">Pridėti</button>
+      }
+    </div>
+  </div>
+
+</div>

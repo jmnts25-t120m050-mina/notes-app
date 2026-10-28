@@ -1,0 +1,6 @@
+<div class="row row-cols-2 mb-2">
+  <app-note-card-new></app-note-card-new>
+  @for (note of notes; track note.id; let i = $index) {
+    <app-note-card [note]="note" [index]="i"></app-note-card>
+  }
+</div>
